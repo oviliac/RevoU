@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #f0f0f0fc;
+   color: transparent;
+   padding: 20px;
+ }
+
+ .nav-container {
+   display: flex;
+   width: 100%;
+   max-width: 72.5rem;
+   margin-right: auto;
+   margin-left: auto;
+ }
+
+ .nav-logo {
+   max-width: 100%;
+   max-height: 50px;
+   background-color: transparent;
+ }
+
+ .nav-menu {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   margin-left: auto;
+   padding-right: 4rem;
+   float: right;
+   position: relative;
+   background-color: transparent;
+ }
+
+ nav ul {
+   display: flex;
+   list-style: none;
+ }
+
+ nav ul li {
+   margin-left: 20px;
+ }
+
+ nav ul li a {
+   color: black;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+
+ nav ul li a:hover {
+   color: #f8b500;
+ }
+
+ .banner-text {
+   text-align: center !important;
+   font-size: 35px;
+   color: #000;
+   font-family: sans-serif;
+ }
+
+ .banner-text-sub {
+  text-align: center !important;
+ }
+
+ .grid-container.travel {
+   display: grid;
+   grid-auto-columns: 1fr;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: auto;
+   grid-column-gap: 16px;
+ }
+
+ /* .banner-section{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: center;
+  } */
+  
+ .travel-preview {
+   /* border-style: solid;
+   border-width: 1px;
+   border-color: rgba(0, 0, 0, 0.06);
+   border-radius: 8px;
+   box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.04); */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+
+ .travel-form {
+   display: flex;
+   display: grid;
+   padding: 40px;
+   border-style: solid;
+   border-width: 1px;
+   border-color: rgba(0, 0, 0, 0.06);
+   border-radius: 8px;
+   box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.04);
+   border-radius: 5px;
+   background-color: #f0f0f0fc;
+ }
+
+ .travel-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+ .travel-placeholder {
+  display: flex;
+  display: grid;
+  padding: 40px;
+}
+
+ label[for=name] {
+   display: block;
+ }
+
+ input[type=text] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+
+ input[type=email] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+ }
+
+ select {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   background-color: white;
+   color: #778899;
+ }
+
+ input[type=submit] {
+   width: 100%;
+   background-color: black;
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ input[type=submit]:hover {
+   background-color: #45a049;
+ }
+ 
+ .grid-card {
+  display: block;
+  margin: auto 0;
+ }
+
+ .container {
+  width: 60%;
+  margin: 0 auto;
+ }
+
+ .travel-preview-image {
+  padding: 0 25px;
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center; */
+ }
+
+ .travel-preview-description {
+  margin: 0 110px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+ }
+
+ .profile-img {
+  width: 35px;
+  margin: 10px;
+  border-radius: 50%;
+ }
+
+ .grid-card-highlight {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+ }
+
+ .profile-card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: left;
+ }
+
+ .profile-name {
+  font-weight: bold;
+ }
+
+ .profile-detail {
+  font-style: italic;
+ }
+
+ .travel-preview-text {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .border-bottom {
+  border-bottom: 2px solid #bbb;
+  border-radius: 3px;
+  width: 20%;
+ }
+
+ .travel-summary ol {
+    display: block;
+    padding: 0 0 0 26px;
+    list-style: none;
+    overflow: hidden;
+    counter-reset: numList;
+  }
+ .travel-summary ol li {
+    width: 100%;
+    margin-right: 44px;
+    float: left;
+    position: relative;
+    height: 50px;
+  }
+
+ .travel-summary ol li:before {
+  counter-increment: numList;
+  content: counter(numList);
+  
+  float: left;
+  position: absolute;
+  left: -26px;
+  
+  font: bold 12px sans-serif;
+  text-align: center;
+  color: #fff;
+  line-height: 42px;
+  
+  width: 42px; 
+  height: 42px;
+  background: #ccc;
+  
+  -moz-border-radius: 999px;
+  border-radius: 999px
+ }
+
+ .list-item {
+  margin: auto 0 auto 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ }
+
+ .section-divider {
+  background-color: #f6f6f6;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+ }
+
+ .grid-container-3-column {
+  padding-top: 35px;
+  padding-bottom: 42px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 16px;
+}
+
+ .grid-item {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+ }
+
+
+ .destination-card .card-title {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+ }
+
+ .destination-card .card-title .dest-name {
+  font-weight: bold;
+ }
+
+ .destination-card .dest-description {
+  margin: 0 0 0 auto;
+  width: 80%;
+ }
+
+ .closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+ }
+
+ .closing h1 {
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .closing p {
+  font-size: 0.9em;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+ }
+
+ .closing button {
+  background-color: black;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+ }
+
+ .closing button:hover {
+  cursor: pointer;
+  background-color: #FABD44;
+}
